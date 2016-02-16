@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <FrameLayout
+    android:id="@+id/cameraPreview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  />
+    
+  	<LinearLayout
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:orientation="horizontal"
+  	    android:layout_gravity="center_vertical|center_horizontal"
+  	    >
+  	   
+  	      <Button
+		    android:id="@+id/cancelButton"
+		    android:text="@string/cancelBtn"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		  />
+  	      <TextView
+  	          android:id="@+id/textView"
+  	          android:layout_width="0dp"
+  	          android:layout_height="wrap_content"
+  	          android:layout_weight="1"
+  	          android:text="@string/textView"
+  	          android:gravity="center"
+  	          android:textSize="25sp"
+  	          android:textColor="@color/red"
+  	          />
+  	      <TextView
+  	          android:id="@+id/textView_2"
+  	          android:layout_width="0dp"
+  	          android:layout_height="wrap_content"
+  	          android:layout_weight="1"
+  	          android:text="@string/textView"
+  	          android:gravity="center"
+  	          android:textSize="25sp"
+  	          android:textColor="@color/red"
+  	          />
+  	      <TextView
+  	          android:id="@+id/progress"
+  	          android:layout_width="0dp"
+  	          android:layout_height="wrap_content"
+  	          android:layout_weight="1"
+  	          android:text="@string/progress"
+  	          android:gravity="center"
+  	          android:textSize="25sp"
+  	          android:textColor="@color/green"
+  	          />
+  	      <TextView
+  	          android:id="@+id/progress_2"
+  	          android:layout_width="0dp"
+  	          android:layout_height="wrap_content"
+  	          android:layout_weight="1"
+  	          android:text="@string/progress"
+  	          android:gravity="center"
+  	          android:textSize="25sp"
+  	          android:textColor="@color/green"
+  	          />
+  	      
+  	</LinearLayout>
+
+
+</FrameLayout>

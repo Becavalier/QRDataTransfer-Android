@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">OpTiMuS-v1</string>
+    <string name="scanButton">发送端（生成）</string>
+    <string name="getText">NONE</string>
+    <string name="inputText">Input_Info</string>
+    <string name="makeButton">接收端（解析）</string>
+    <string name="depImg">getImg</string>
+    <string name="btnTest">设置</string>
+    <string name="btnInitialize">初始化</string>
+    <string name="cancelBtn">取消</string>
+    <string name="textView">0</string>
+    <string name="title_activity_settings">设置</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="progress">0 %</string>
+    <string name="title_activity_result_receiver">ResultReceiver</string>
+    <string name="sosButton">SOS（生成）</string>
+    <string name="chgPosButton">更换位置</string>
+
+</resources>

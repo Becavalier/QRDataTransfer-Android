@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PreferenceScreen  
+        xmlns:android="http://schemas.android.com/apk/res/android">  
+    
+    <PreferenceCategory  
+            android:title="二维码参数设置">  
+        <EditTextPreference  
+                android:key="per_barcode_content"  
+                android:title="设置单幅二维码容量"  
+                android:dialogTitle="请输入二维码容量（字符/幅）" /> 
+        <EditTextPreference  
+                android:key="per_barcode_size"  
+                android:title="设置单幅二维码显示大小"  
+                android:dialogTitle="请输入二维码显示大小" />   
+    </PreferenceCategory>  
+    <PreferenceCategory  
+            android:title="二维码发送过程设置">  
+        <EditTextPreference  
+                android:key="per_barcode_interval"  
+                android:title="设置二维码发送间隔时间"  
+                android:dialogTitle="请输入二维码发送间隔（毫秒）" /> 
+        <EditTextPreference  
+                android:key="barcode_start_delay"  
+                android:title="设置发送初始延时时间"  
+                android:dialogTitle="请输入二维码初始发送延时（毫秒）" />   
+    </PreferenceCategory> 
+    <PreferenceCategory  
+            android:title="二维码接收过程设置">  
+        <ListPreference   
+	            android:key="barcode_receive_scan_density" 
+	            android:title="点此设置扫描精度"   
+	            android:dialogTitle="请选择扫描精度（值越小精度越高）" 
+	            android:entries="@array/barcode_scan_density_key" 
+	            android:entryValues="@array/barcode_scan_density_value" 
+	            android:defaultValue="2"> 
+        </ListPreference>
+        <EditTextPreference  
+                android:key="barcode_receive_preview_width"  
+                android:title="设置扫描预览宽度（Width）"  
+                android:dialogTitle="设置扫描预览宽度（Width）" /> 
+        <EditTextPreference  
+                android:key="barcode_receive_preview_height"  
+                android:title="设置扫描预览高度（Height）"  
+                android:dialogTitle="设置扫描预览高度（Height）" />
+    </PreferenceCategory> 
+    <PreferenceCategory  
+            android:title="二维码线程设置">  
+        <EditTextPreference  
+                android:key="barcode_product_thread_num"  
+                android:title="设置生成线程数"  
+                android:dialogTitle="请输入生成线程数（1-3个）" /> 
+        <EditTextPreference  
+                android:key="barcode_product_thread_priority"  
+                android:title="设置生成线程优先级"  
+                android:dialogTitle="请输入生成线程优先级（-16-0）" />
+    </PreferenceCategory> 
+    <PreferenceCategory  
+            android:title="差错控制设置">  
+        <EditTextPreference  
+                android:key="error_ctl_group_nums"  
+                android:title="设置分组扫描大小"  
+                android:dialogTitle="分组扫描大小（1-10）" /> 
+        <EditTextPreference  
+                android:key="error_ctl_sound_low"  
+                android:title="设置差错检验分贝数"  
+                android:dialogTitle="差错检验分贝数（65-80db）" />
+    </PreferenceCategory> 
+</PreferenceScreen>  
